@@ -125,7 +125,7 @@ const validateOpenOptions = (options) => {
 
   if (
     options.mode !== undefined &&
-    (options.mode != "temp" || options.mode != "temp_humid")
+    (options.mode != "temp" && options.mode != "temp_humid")
   ) {
     return "Expected mode to be one of the following strings: 'temp' or 'temp_humid'";
   }

@@ -43,7 +43,7 @@ class HDC2010Plugin {
       .setCharacteristic(Characteristic.SerialNumber, hostname + "-" + hostname)
       .setCharacteristic(
         Characteristic.FirmwareRevision,
-        require("./package.json").version
+        require("../package.json").version
       );
 
     hdc2010

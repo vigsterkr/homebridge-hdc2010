@@ -1,0 +1,48 @@
+{
+  "author": "vigsterkr",
+  "bugs": {
+    "url": "https://github.com/vigsterkr/homebridge-hdc2010/issues"
+  },
+  "dependencies": {
+    "i2c-bus": "^5.2.2",
+    "mutexify": "^1.3.1"
+  },
+  "description": "A homebridge plugin for the TI HDC2010 temperature sensor on RaspberryPi",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "prettier": "2.4.1"
+  },
+  "engines": {
+    "node": ">=10.17.0",
+    "homebridge": ">=1.1.7"
+  },
+  "homepage": "https://github.com/vigsterkr/homebridge-hdc2010#readme",
+  "keywords": [
+    "homebridge",
+    "homebridge-plugin",
+    "temperature",
+    "sensor",
+    "RaspberryPi",
+    "homekit",
+    "hdc2010"
+  ],
+  "license": "Apache 2.0",
+  "main": "src/sensor.js",
+  "name": "@vigsterkr/homebridge-hdc2010",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigsterkr/homebridge-hdc2010.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint src",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier src --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "format": "npm run prettier:fix && npm run lint:fix"
+  },
+  "version": "0.1.0"
+}
